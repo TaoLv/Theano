@@ -132,7 +132,6 @@ if config.device.startswith('cpu'):
     except (TypeError, NotImplementedError, RuntimeError) as e:
         theano_logger.warning("Failed to import mkl module due to: %s" % str(e))
 
-
 if (config.device.startswith('cuda') or
         config.device.startswith('opencl') or
         config.init_gpu_device.startswith('cuda') or
