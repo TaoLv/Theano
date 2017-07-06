@@ -1555,13 +1555,8 @@ static PyMethodDef MKLNdarray_methods[] = {
         "Create a new MklNdarray with specified shape, filled ith zeros."},
 
     {"__copy__",
-<<<<<<< HEAD
         (PyCFunction)MKLNdarray_Copy, METH_NOARGS,
         "Create a copy of this object. used by module copy"},
-=======
-        (PyCFunction)MKLNdarray_View, METH_NOARGS,
-        "Create a shallow copy of this object. used by module copy"},
->>>>>>> 5cad38cc22ac95d4f85d7982d1be11e9ec6a83ce
 
     {"__deepcopy__",
         (PyCFunction)MKLNdarray_DeepCopy, METH_O,
